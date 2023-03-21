@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './excer/exce2';
+import AppDay4 from './excer/exce1';
+import Excer2 from './excer/exce2';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route path="/" element={<AppDay4 />} />
+          <Route path="excer2" element={<Excer2 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
-
 export default App;
